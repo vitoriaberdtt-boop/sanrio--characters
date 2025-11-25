@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1 {
+  font-family: "Comfortaa";
+  text-align: center;
+  color: rgb(153, 1, 57);
+}
+h3 {
+  font-family: "Comfortaa";
+  color: rgb(24, 77, 146);
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+p {
+  font-family: "Comfortaa";
+  color: rgb(17, 52, 99);
+}
+nav a {
+  color: white;
+  margin: 0 1rem;
+  font-family: "Comfortaa";
+  cursor: pointer;
+}
+footer {
+  border-top: 0.1rem solid rgb(24, 77, 146);
+  margin-top: 1rem;
+  padding: 0rem;
+  text-align: center;
+}
+fieldset {
+  border-radius: 3rem;
+  border: 0.2rem solid rgb(24, 77, 146);
+  padding: 1rem;
+  background-color: rgb(96, 209, 247);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.5rem 0rem;
+}
+.alltitle {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+}
+.all {
+  width: 30%;
+  border-radius: 1rem;
+}
+.allh3 {
+  width: 90%;
+  height: auto;
+  font-size: 110%;
+  margin-bottom: 0rem;
+}
+.foo {
+  width: 60%;
+}
+.hello {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.my {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.kuromi {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.pom {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.kero {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.roll {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.maru {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.imghello {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgmy {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgkuromi {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgpom {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgkero {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgroll {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+.imgmaru {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 0.001rem;
+  }
+  body {
+    background-color: rgb(96, 209, 247);
+  }
+  main {
+    width: 92%;
+    margin: auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  img {
+    width: 2rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  fieldset {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .all {
+    width: 60%;
+  }
+  .allh3 {
+    width: 90%;
+    height: auto;
+    font-size: 110%;
+    margin-bottom: 0rem;
+  }
+  .imghello {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgmy {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgkuromi {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgpom {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgkero {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgroll {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgmaru {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .hello {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .my {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .kuromi {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .pom {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .kero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .roll {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .maru {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1rem 0rem;
+  }
+  body {
+    background-color: rgb(96, 209, 247);
+  }
+  main {
+    width: 92%;
+    margin: auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 290%;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  .bow {
+    width: 2rem;
+  }
+  .all {
+    width: 70%;
+  }
+  .allh3 {
+    width: 90%;
+    height: auto;
+    font-size: 100%;
+    margin-bottom: 0rem;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+  .imghello {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgmy {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgkuromi {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgpom {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgkero {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgroll {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .imgmaru {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .hello {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .my {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .kuromi {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .pom {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .kero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .roll {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .maru {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1rem 0rem;
+  }
+  body {
+    background-color: rgb(96, 209, 247);
+  }
+  main {
+    width: 85%;
+    margin: auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+  .bow {
+    width: 2.5rem;
+  }
+  .all {
+    width: 70%;
+  }
+  .allh3 {
+    width: 90%;
+    height: auto;
+    font-size: 130%;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 0.001rem;
+  }
+  body {
+    background-color: rgb(96, 209, 247);
+  }
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 400%;
+  }
+  img {
+    width: 3rem;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+  .bow {
+    width: 3rem;
+  }
+  .allh3 {
+    width: 90%;
+    height: auto;
+    font-size: 200%;
+    margin-bottom: 0rem;
+  }
+}
+@media (min-width: 1281px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 0.001rem;
+  }
+  body {
+    background: linear-gradient(rgb(96, 209, 247), rgb(96, 209, 247));
+  }
+  main {
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 400%;
+  }
+  img {
+    width: 4rem;
+  }
+  nav a {
+    font-size: 1.3rem;
+  }
+  .allh3 {
+    width: 90%;
+    height: auto;
+    font-size: 200%;
+    margin-bottom: 1rem;
+  }
+}
