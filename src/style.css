@@ -6,455 +6,203 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+body {
+  background-color: rgb(96, 209, 247);
+  font-family: "Comfortaa", sans-serif;
+}
+hr {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border: none;
+  border-top: 0.5rem solid rgb(145, 228, 255);
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
 h1 {
-  font-family: "Comfortaa";
+  font-size: clamp(1.8rem, 5vw, 4rem);
   text-align: center;
   color: rgb(153, 1, 57);
 }
-h3 {
-  font-family: "Comfortaa";
-  color: rgb(24, 77, 146);
-  padding: 0rem 0rem;
-  margin: 0rem 0rem;
-  box-sizing: border-box;
-  align-items: center;
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
+  color: rgb(153, 1, 57);
 }
 p {
-  font-family: "Comfortaa";
   color: rgb(17, 52, 99);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+header {
+  display: flex;
+  background: radial-gradient(circle, rgb(192, 125, 181), rgb(145, 165, 255));
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+.bow {
+  width: clamp(2rem, 8vw, 8rem);
+}
+.alltitle {
+  padding: 0.5rem 1rem;
 }
 nav a {
   color: white;
-  margin: 0 1rem;
-  font-family: "Comfortaa";
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
 }
-footer {
-  border-top: 0.1rem solid rgb(24, 77, 146);
-  margin-top: 1rem;
-  padding: 0rem;
-  text-align: center;
-}
-fieldset {
-  border-radius: 3rem;
-  border: 0.2rem solid rgb(24, 77, 146);
+main {
+  width: min(80%, 1200px);
+  margin: 0 auto;
   padding: 1rem;
-  background-color: rgb(96, 209, 247);
+}
+.allsection {
+  background-color: rgb(145, 228, 255);
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+.divall {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 1.5rem 0rem;
-}
-.alltitle {
-  margin-bottom: 2rem;
-  padding: 1rem 1rem;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .all {
-  width: 30%;
+  width: 40%;
   border-radius: 1rem;
 }
 .allh3 {
-  width: 90%;
-  height: auto;
-  font-size: 110%;
-  margin-bottom: 0rem;
+  font-size: 2.5rem;
+  color: rgb(24, 77, 146);
+}
+fieldset {
+  border: none;
+  padding: 1rem 9rem;
+  background-color: rgb(96, 209, 247);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+  gap: 1.5rem;
+}
+fieldset img {
+  width: 20%;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+footer {
+  background-color: rgb(145, 228, 255);
+  text-align: center;
+  padding: 2rem 1rem;
 }
 .foo {
-  width: 60%;
-}
-.hello {
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  display: flex;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.my {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.kuromi {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.pom {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.kero {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.roll {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-}
-.maru {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
+  width: 10%;
+  margin-bottom: 1rem;
 }
 
-.imghello {
-  width: 15%;
-  margin-bottom: 1rem;
+/* ── Hamburger (escondido no desktop) ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  z-index: 100;
 }
-.imgmy {
-  width: 15%;
-  margin-bottom: 1rem;
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.imgkuromi {
-  width: 15%;
-  margin-bottom: 1rem;
+
+/* ── Desktop ── */
+@media (min-width: 1025px) {
+  main { width: 75%; }
 }
-.imgpom {
-  width: 15%;
-  margin-bottom: 1rem;
+
+/* ── Tablet ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  main { width: 85%; }
+  .bow { width: 5rem; }
 }
-.imgkero {
-  width: 15%;
-  margin-bottom: 1rem;
-}
-.imgroll {
-  width: 15%;
-  margin-bottom: 1rem;
-}
-.imgmaru {
-  width: 15%;
-  margin-bottom: 1rem;
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  main { width: 92%; }
+
+.allh3 {
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+  }
+.alltitle {
+        padding: 0.5rem 1rem;
+    }
+  header {
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+  }
+
+  .bow { width: 3rem; }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem 0 0.5rem;
+    background: rgba(192, 125, 181, 0.3);
+    border-radius: 0.5rem;
+  }
+
+  #nav-menu.open {
+    display: flex;
+  }
+
+  #nav-menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.4rem;
+    transition: background 0.2s;
+  }
+
+  #nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .divall { flex-direction: column; }
+  .all { width: 80%; }
+
+  fieldset {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+  fieldset img { width: 50%; }
+  .foo { width: 25%; }
 }
 
 @media (max-width: 400px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.8rem 0.001rem;
-  }
-  body {
-    background-color: rgb(96, 209, 247);
-  }
-  main {
-    width: 92%;
-    margin: auto;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 300%;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  img {
-    width: 2rem;
-  }
-  nav a {
-    font-size: 1rem;
-  }
-  fieldset {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0rem 0rem;
-    padding: 1rem 0rem;
-  }
-  .all {
-    width: 60%;
-  }
-  .allh3 {
-    width: 90%;
-    height: auto;
-    font-size: 110%;
-    margin-bottom: 0rem;
-  }
-  .imghello {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgmy {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgkuromi {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgpom {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgkero {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgroll {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgmaru {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .hello {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .my {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .kuromi {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .pom {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .kero {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .roll {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .maru {
-    flex-direction: column;
-    padding: 2rem 1rem;
+  #nav-menu a {
+    font-size: 0.85rem;
   }
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.1rem 0rem;
-  }
-  body {
-    background-color: rgb(96, 209, 247);
-  }
-  main {
-    width: 92%;
-    margin: auto;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 290%;
-  }
-  nav a {
-    font-size: 1rem;
-  }
-  .bow {
-    width: 2rem;
-  }
-  .all {
-    width: 70%;
-  }
-  .allh3 {
-    width: 90%;
-    height: auto;
-    font-size: 100%;
-    margin-bottom: 0rem;
-  }
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-  }
-  .imghello {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgmy {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgkuromi {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgpom {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgkero {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgroll {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .imgmaru {
-    width: 30%;
-    margin-bottom: 1rem;
-  }
-  .hello {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .my {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .kuromi {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .pom {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .kero {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .roll {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .maru {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.1rem 0rem;
-  }
-  body {
-    background-color: rgb(96, 209, 247);
-  }
-  main {
-    width: 85%;
-    margin: auto;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 300%;
-  }
-  nav a {
-    font-size: 1.2rem;
-  }
-  .bow {
-    width: 2.5rem;
-  }
-  .all {
-    width: 70%;
-  }
-  .allh3 {
-    width: 90%;
-    height: auto;
-    font-size: 130%;
-    margin-bottom: 0rem;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.8rem 0.001rem;
-  }
-  body {
-    background-color: rgb(96, 209, 247);
-  }
-  main {
-    width: 80%;
-    margin: auto;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 400%;
-  }
-  img {
-    width: 3rem;
-  }
-  nav a {
-    font-size: 1.2rem;
-  }
-  .bow {
-    width: 3rem;
-  }
-  .allh3 {
-    width: 90%;
-    height: auto;
-    font-size: 200%;
-    margin-bottom: 0rem;
-  }
-}
-@media (min-width: 1281px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgb(46, 13, 163), rgb(112, 31, 163));
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.8rem 0.001rem;
-  }
-  body {
-    background: linear-gradient(rgb(96, 209, 247), rgb(96, 209, 247));
-  }
-  main {
-    width: 75%;
-    margin: auto;
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 400%;
-  }
-  img {
-    width: 4rem;
-  }
-  nav a {
-    font-size: 1.3rem;
-  }
-  .allh3 {
-    width: 90%;
-    height: auto;
-    font-size: 200%;
-    margin-bottom: 1rem;
-  }
-}
